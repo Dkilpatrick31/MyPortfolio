@@ -1,22 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700|Raleway" rel="stylesheet">
     <title>My Portfolio</title>
   </head>
   <body>
-    <h1>My Portfolio</h1>
-    <p>this is my portfolio page</p>
-    <div>
-      <li>
-        Projects
-      </li>
-      <li>
-        Resume
-      </li>
-      <li>Work Experience</li>
-    </div>
+    <header>
+      <h1>Dane Kilpatrick</h1>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <section>
+      <h2>About Me</h2>
+      <hr>
+      <p>I am an adaptable and creative web developer. I pursue collaborative projects that have a meaningful and impactful outcome on everyday life. I utilize my experience in technology sales to help resolve current problems in the tech industry. I have a passion for the aesthetic side of web development that impacts the overall exeprience of the user.</p>
+      <img src="/img/Dane.png" class="about-pic" alt="Picture of Dane Kilpatrick">
+    </section>
+
+    <section class="projects-section">
+      <h2>Projects</h2>
+      <hr>
+      <article class="adopt-a-woof">
+        <a href="https://github.com/Dane-Kilpatrick/Adopt_A_Woof">Adopt A Woof</a>
+        <img class="cutepuppy" src="img/cutepuppy.jpg" alt="Picture of Adopt a Woof App.">
+        <p>An online web application that is tailored for dog-lovers to find their next bestfriend. Built using Python and Django. Data hosted on SQLite databases allowing users to create, read, update and delete entries.</p>
+      </article>
+      <article class="dronedb">
+        <a href="https://github.com/Dane-Kilpatrick/Adopt_A_Woof">Dronedb</a>
+        <img src="/img/drone-shot2.png" alt="Dronedb App Picture">
+        <p>This project was built as a collaboration between Justin Rhoads, Jared Watson, Benjamin Tovar and myself . It was built using React, NodeJS and MongoDB. This application was then deployed to Heroku.</p>
+      </article>
+      <article class="geo-quakes">
+        <a href="https://github.com/Dane-Kilpatrick/Adopt_A_Woof">Geo-Quakes</a>
+        <p>The application allows users to view recent earthquakes on a world map. The larger the circles, the larger the magnitude. This uses jQuery, the US Earthquake tracking API and Google Maps API.</p>
+      </article>
+      <article class="tic-tac-toe">
+        <a href="https://github.com/Dane-Kilpatrick/Adopt_A_Woof">Tic-tac-toe</a>
+        <p>Used Javascript to create functional two player Tic Tac Toe game.</p>
+      </article>
+    </section>
+
+    <footer>Connect With Me</footer>
+    <banner>
+    <script src="/main.js"></script>
   </body>
 </html>
