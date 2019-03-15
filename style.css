@@ -6,70 +6,105 @@
 /* ========= base ==============  */
 
 body {
-  background-color: #E1E4F0;
+  margin: 0;
+  margin-top: 50px;
+  font-family: sans-serif;
 }
 
-h1 {
-  font-size: 55px;
-  color: blue;
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: #eee;
 }
 
-h2 {
+.name {
+  margin: 0;
+}
+
+header * {
+  display: inline;
+  height: 50px;
+}
+
+header ul {
+  padding: 0;
+}
+
+header li {
+  margin-left: 20px;
+}
+
+section {
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-family: 'Noto Sans', sans-serif;
-}
 
-a {
-  font-family: 'Noto Sans', sans-serif;
-  color: #030F18;
-}
-
-ul {
-  text-decoration: none;
-}
-
-li {
-  border: 2px solid red;
-  max-width: 100px;
-  font-size: 25px;
-}
-
-p {
-  color: #030F18;
-  font-size: 24px;
-  font-family: 'Raleway', sans-serif;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 img {
-  width: 500px;
+  width: 300px;
 }
 
-hr {
-  width: 50%;
+.profile-img {
+  width: 300px;
+  border-radius: 50%;
 }
 
 footer {
-  font-family: 'Noto Sans', sans-serif;
-}
-/* ========= classes ==============  */
-
-.nav-bar {
+  text-align: center;
+  padding: 50px;
+  background-color: #eee;
 
 }
 
-.about-pic {
-  height: 500px;
-  width: 350px;
+#hero h1 {
+  font-size: 3em;
 }
 
-.banner {
+section h2 {
+  font-size: 2.5em;
+}
+
+section h3 {
+  font-size: 1.5em;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+#hero {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.imgur.com/WwwYx3B.jpg');
+}
+
+
+#about {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.imgur.com/zBgQG3i.jpg');
+}
+
+
+#projects {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.imgur.com/MmJkwu6.jpg');
 
 }
 
-.projects-section {
 
-}
-
-.cutepuppy {
-
+.all-projects {
+  display: grid;
+  grid-template-rows: 350px 350px;
+  grid-template-columns: 550px 550px;
 }
